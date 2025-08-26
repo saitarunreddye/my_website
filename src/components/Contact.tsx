@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useForm } from 'react-hook-form'
 import { toast } from 'react-hot-toast'
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Linkedin } from 'lucide-react'
 
 interface ContactFormData {
   name: string
@@ -50,15 +50,9 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      icon: Github,
-      title: 'GitHub',
-      href: 'https://github.com/saitarunreddye',
-      color: 'hover:bg-gray-700',
-    },
-    {
       icon: Linkedin,
       title: 'LinkedIn',
-      href: '#', // Add your LinkedIn URL
+      href: 'https://www.linkedin.com/in/rsaitarun/',
       color: 'hover:bg-blue-600',
     },
   ]
@@ -332,24 +326,30 @@ const Contact = () => {
               I'm here to help bring your data vision to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.a
-                href="mailto:reddytarun223@gmail.com"
+              <motion.button
+                onClick={() => {
+                  navigator.clipboard.writeText('reddytarun223@gmail.com')
+                  toast.success('Email copied to clipboard!')
+                }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Email Me
-              </motion.a>
-              <motion.a
-                href="tel:+19402850439"
+              </motion.button>
+              <motion.button
+                onClick={() => {
+                  navigator.clipboard.writeText('+1 (940) 285-0439')
+                  toast.success('Phone number copied to clipboard!')
+                }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-secondary"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Me
-              </motion.a>
+              </motion.button>
             </div>
           </div>
         </motion.div>
