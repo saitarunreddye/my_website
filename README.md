@@ -1,4 +1,4 @@
-# 🚀 John Doe - Portfolio Website
+# 🚀 Sai Tarun - Portfolio Website
 
 A cutting-edge, modern portfolio website built with React, TypeScript, and advanced web technologies. This portfolio showcases exceptional design, smooth animations, and interactive features that demonstrate technical expertise and creative innovation.
 
@@ -206,7 +206,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-John Doe - [john@example.com](mailto:john@example.com)
+Sai Tarun - [reddytarun223@gmail.com](mailto:reddytarun223@gmail.com)
 
 Project Link: [https://github.com/yourusername/portfolio-website](https://github.com/yourusername/portfolio-website)
 

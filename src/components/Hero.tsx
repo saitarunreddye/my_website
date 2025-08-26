@@ -149,7 +149,7 @@ const Hero = () => {
                 </motion.button>
               </Link>
               <motion.a
-                href="/sai_tarun_resume.pdf"
+                href="/my_website/sai_tarun_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
@@ -211,7 +211,7 @@ const Hero = () => {
               <div className="bg-gradient-to-r from-primary-400 via-accent-400 to-secondary-400 p-1 rounded-3xl shadow-medium">
                 <div className="relative">
                   <img
-                    src="/images/profile-photo.jpg"
+                    src="/my_website/images/profile-photo.jpg"
                     alt="Sai Tarun"
                     className="w-80 h-80 rounded-3xl object-cover shadow-soft"
                     onError={(e) => {
