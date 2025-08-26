@@ -193,20 +193,24 @@ const Contact = () => {
               className="glass p-8 rounded-2xl"
             >
               <h3 className="text-2xl font-bold mb-6 gradient-text">Availability</h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-neutral-700 font-medium">Available for Full-time Roles</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span className="text-neutral-700 font-medium">Open to Freelance Projects</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <span className="text-neutral-700 font-medium">Considering Remote Opportunities</span>
-                </div>
-              </div>
+                             <div className="space-y-4">
+                 <div className="flex items-center space-x-3">
+                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                   <span className="text-neutral-700 font-medium">Available for Full-time Roles</span>
+                 </div>
+                 <div className="flex items-center space-x-3">
+                   <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                   <span className="text-neutral-700 font-medium">Open to Freelance Projects</span>
+                 </div>
+                 <div className="flex items-center space-x-3">
+                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                   <span className="text-neutral-700 font-medium">Open to Consulting & Contract Work</span>
+                 </div>
+                 <div className="flex items-center space-x-3">
+                   <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                   <span className="text-neutral-700 font-medium">Open for Internship</span>
+                 </div>
+               </div>
             </motion.div>
           </motion.div>
 
