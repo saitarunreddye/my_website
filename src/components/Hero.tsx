@@ -1,19 +1,18 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-import { Github, Mail, Linkedin, ChevronDown, Code, Database, BarChart3, Download } from 'lucide-react'
+import { Mail, Linkedin, ChevronDown, Code, Database, BarChart3, Download } from 'lucide-react'
 import ThreeDBackground from './ThreeDBackground'
+import toast from 'react-hot-toast'
 
 const Hero = () => {
   const socialLinks = [
     {
-      name: 'GitHub',
-      url: 'https://github.com/saitarunreddye',
-      icon: Github,
-    },
-    {
       name: 'Email',
-      url: 'mailto:reddytarun223@gmail.com',
       icon: Mail,
+      action: () => {
+        navigator.clipboard.writeText('reddytarun223@gmail.com')
+        toast.success('Email copied to clipboard!')
+      }
     },
     {
       name: 'LinkedIn',
@@ -178,20 +177,35 @@ const Hero = () => {
               className="flex space-x-4"
             >
               {socialLinks.map((social, index) => (
-                <motion.a
-                  key={social.name}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-12 h-12 bg-white/80 border border-neutral-200 rounded-xl flex items-center justify-center text-neutral-600 hover:text-primary-600 hover:border-primary-300 transition-all duration-300 shadow-soft"
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.4 + index * 0.1, duration: 0.5 }}
-                >
-                  <social.icon className="w-5 h-5" />
-                </motion.a>
+                social.url ? (
+                  <motion.a
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="w-12 h-12 bg-white/80 border border-neutral-200 rounded-xl flex items-center justify-center text-neutral-600 hover:text-primary-600 hover:border-primary-300 transition-all duration-300 shadow-soft cursor-pointer"
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 1.4 + index * 0.1, duration: 0.5 }}
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </motion.a>
+                ) : (
+                  <motion.button
+                    key={social.name}
+                    onClick={social.action}
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="w-12 h-12 bg-white/80 border border-neutral-200 rounded-xl flex items-center justify-center text-neutral-600 hover:text-primary-600 hover:border-primary-300 transition-all duration-300 shadow-soft cursor-pointer"
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 1.4 + index * 0.1, duration: 0.5 }}
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </motion.button>
+                )
               ))}
             </motion.div>
           </motion.div>

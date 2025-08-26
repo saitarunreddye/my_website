@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { User, MapPin, Mail, Phone, Globe } from 'lucide-react'
+import { User, MapPin, Mail, Phone } from 'lucide-react'
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -13,7 +13,6 @@ const About = () => {
     { icon: MapPin, label: 'Location', value: 'Cleveland, OH, USA' },
     { icon: Mail, label: 'Email', value: 'reddytarun223@gmail.com' },
     { icon: Phone, label: 'Phone', value: '+1 (940) 285-0439' },
-    { icon: Globe, label: 'Website', value: 'Add your domain or GitHub Pages URL' },
   ]
 
   const timeline = [
