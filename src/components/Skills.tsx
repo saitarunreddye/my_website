@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Database, Cloud, BarChart3, Code, Settings, Shield } from 'lucide-react'
+import { Database, Cloud, BarChart3, Settings, Shield } from 'lucide-react'
 
 const Skills = () => {
   const [ref, inView] = useInView({

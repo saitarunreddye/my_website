@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-import { Github, Mail, Linkedin, ChevronDown, Sparkles, Code, Database, BarChart3, Download } from 'lucide-react'
+import { Github, Mail, Linkedin, ChevronDown, Code, Database, BarChart3, Download } from 'lucide-react'
 import ThreeDBackground from './ThreeDBackground'
 
 const Hero = () => {
