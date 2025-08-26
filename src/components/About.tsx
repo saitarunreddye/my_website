@@ -125,16 +125,12 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-6 gradient-text">Bio</h3>
               <div className="space-y-4 text-neutral-700">
                 <p>
-                  I'm a passionate data engineer with expertise in building scalable data pipelines and analytics solutions. 
-                  My journey in data engineering began with a curiosity about how data can drive business decisions.
+                  I'm a passionate data engineer focused on turning raw data into reliable, decision-ready insights. 
+                  I specialize in SQL Server, Snowflake, and ETL/ELT, with a track record of reducing processing times by up to 35% through performance tuning and better data models.
                 </p>
                 <p>
-                  I specialize in SQL Server, Snowflake, and ETL/ELT processes, with a proven track record of 
-                  optimizing data workflows and reducing processing times by up to 35%.
-                </p>
-                <p>
-                  Currently pursuing my Master's in Data Science at Cleveland State University while working as a 
-                  Graduate Research Assistant, I'm constantly learning and applying new technologies to solve complex data challenges.
+                  I completed my master's at Cleveland State University, where I also served as a Graduate Research Assistant. 
+                  I'm continuously learning and enjoy translating complex requirements into scalable, cost-aware data solutions.
                 </p>
               </div>
             </motion.div>
