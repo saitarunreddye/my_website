@@ -228,7 +228,7 @@ const Experience = () => {
                 <div className="text-sm text-neutral-600">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold gradient-text mb-2">4</div>
+                <div className="text-3xl font-bold gradient-text mb-2">3</div>
                 <div className="text-sm text-neutral-600">Companies</div>
               </div>
               <div className="text-center">
